@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import {MatFormFieldModule} from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -17,13 +18,14 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
+    MatFormFieldModule,
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
 
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
